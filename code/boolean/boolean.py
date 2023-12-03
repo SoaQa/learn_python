@@ -5,7 +5,7 @@ expression_result = 0 >= 1
 print(expression_result)
 
 
-def is_digit_more_than_input():
+def check_digit():
     digit = int(input("Input a digit: "))
 
     if digit > 10:
