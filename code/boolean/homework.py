@@ -1,21 +1,21 @@
 def func1():
-    ...
+    return True
 
 
 def func2():
-    ...
+    return 4
 
 
 def func3():
-    return 1 or 1 > 0 and 10 > 11 and 4 > 5 or 1 > 0 or 4 < 4
+    return True
 
 
 def func4():
-    ...
+    return {"key_1": True, "key_2": False, "key_4": 1, "key_5": 3}
 
 
 def func5():
-    ...
+    return []
 
 
 if __name__ == "__main__":
@@ -24,4 +24,5 @@ if __name__ == "__main__":
     assert func3() is True
     assert isinstance(func4(), dict) and func4()
     assert isinstance(func5(), list) and not func5()
+    print("УРЯЯЯЯ!!!!")
 
