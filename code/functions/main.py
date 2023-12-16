@@ -50,3 +50,24 @@ def bar(*args: int, **kwargs):
 bar(1, 2, 3,)
 bar(a=1, b=2, c=3)
 bar(5, 6, 7, a=1, b=2, c=3)
+
+
+my_tuple = (1, 2, 3,)
+my_list = [1, 2, 3,]
+
+my_list.append(4)
+print(my_list)
+
+print(id(my_list))
+print(id(my_tuple))
+
+
+def foobar(mlist:list, mtuple: tuple):
+    print(id(mlist))
+    print(id(mtuple))
+
+    mlist.append(5)
+
+
+foobar(my_list, my_tuple)
+print(my_list)
