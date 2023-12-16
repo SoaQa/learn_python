@@ -35,4 +35,18 @@ def outer():
     s_l = ["a", "b", "C"]
     inner()
 
+
 outer()
+
+
+def bar(*args: int, **kwargs):
+    for i in args:
+        print(i)
+
+    for k, v in kwargs.items():
+        print(k, " ", v)
+
+
+bar(1, 2, 3,)
+bar(a=1, b=2, c=3)
+bar(5, 6, 7, a=1, b=2, c=3)
