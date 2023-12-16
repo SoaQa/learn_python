@@ -1,16 +1,15 @@
+from code.functions.decorators import decorator_one
+
 foo = "Hello"
 
 
+@decorator_one
 def square_of_int(digit: int, r: str = None, s: int = 2) -> int:
     result = digit ** s
-
-    if r:
-        print(r)
-    print(foo)
     return result
 
 
-print(square_of_int(6))
+print(square_of_int(6, r="hello", s=3))
 
 
 def bar():
