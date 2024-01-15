@@ -25,7 +25,6 @@ class MyCollection:
         self.a = a
         self.b = b
         self.c = c
-        self.last_returned = None
 
     def __iter__(self):
         return MyIterator(self)
