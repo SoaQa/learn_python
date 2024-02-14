@@ -1,4 +1,4 @@
-from code.functions.decorators import decorator_one
+from src.functions.decorators import decorator_one
 
 foo = "Hello"
 
