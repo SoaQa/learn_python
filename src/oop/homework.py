@@ -23,5 +23,3 @@ if __name__ == '__main__':
     date_str = data_formatter.format(date)
 
     assert date_str == "2024-02-18 23:59:59", date_str
-
-
