@@ -63,6 +63,13 @@ class ClassTextReader(AbstractTextReader):
 # readers["text2"].read_text()
 
 
+def reader_factory(target: str):
+    if target.startswith("http"):
+        return RESTApiTextReader(target)
+    else:
+        return TextReader(target)
+
+
 if __name__ == "__main__":
     readers = [
         RESTApiTextReader("http://ip.jsontest.com/"),
@@ -72,3 +79,9 @@ if __name__ == "__main__":
 
     for i in readers:
         i.read_text()
+
+    reader = reader_factory("http://ip.jsontest.com/")
+    reader.read_text()
+
+    reader = reader_factory("text")
+    reader.read_text()
