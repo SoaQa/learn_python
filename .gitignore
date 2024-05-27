@@ -1,3 +1,4 @@
 .idea
 venv
 *.pyc
+src/processes_threads_coroutines/images
