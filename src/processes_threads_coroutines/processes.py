@@ -20,7 +20,7 @@ if __name__ == '__main__':
     result_list = manager.list()
 
     proc1 = multiprocessing.Process(target=main, args=(1, 5_000_000, result_list))
-    proc2 = multiprocessing.Process(target=main, args=(5_000_001, 10_000_000, result_list))
+    proc2 = multiprocessing.Process(target=main, args=(5_000_000, 10_000_000, result_list))
 
     proc1.start()
     proc2.start()

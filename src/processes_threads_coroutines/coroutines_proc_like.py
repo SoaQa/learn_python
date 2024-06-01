@@ -16,7 +16,7 @@ async def calc(from_int, to_int):
 async def main():
     start = time.time()
 
-    await asyncio.gather(calc(1, 5_000_000), calc(5_000_001, 10_000_000))
+    await asyncio.gather(calc(1, 5_000_000), calc(5_000_000, 10_000_000))
 
     print(sum(result_list2))
     print(time.time() - start)
