@@ -1,8 +1,15 @@
 .idea
 venv
 *.pyc
+
 # Игнорировать все файлы в директории images
 src/processes_threads_coroutines/images/*
 
 # Исключить из игнорируемых файл .gitkeep
 !src/processes_threads_coroutines/images/.gitkeep
+
+# Игнорировать все файлы в директории images
+src/processes_threads_coroutines/boosty/images/*
+
+# Исключить из игнорируемых файл .gitkeep
+!src/processes_threads_coroutines/boosty/images/.gitkeep
